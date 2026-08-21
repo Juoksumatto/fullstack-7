@@ -94,6 +94,7 @@ const App = () => {
         <Route path="/blogs/new" element={<Newblog onBlogCreated={handleBlogCreated} onError={handleError} />} />
         <Route path="/blogs/:id" element={
           <BlogDetail blogs={blogs} onLike={handleLike} onRemove={handleRemove} currentUser={user} />} />
+        <Route path="*" element={<h1>404 - Page not found</h1>}/>
       </Routes>
     </ErrorBoundary>
     </BrowserRouter>

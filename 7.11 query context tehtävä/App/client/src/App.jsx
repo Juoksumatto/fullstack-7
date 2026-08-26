@@ -97,7 +97,7 @@ const App = () => {
       setBlogs(sortBlogsByLikes(updatedBlogs))
     } catch (error) {
       console.error('Failed to remove blog:', error)
-      notification('Failed to remove blog', 5)
+      notify('Failed to remove blog', 5)
     }
   }
 

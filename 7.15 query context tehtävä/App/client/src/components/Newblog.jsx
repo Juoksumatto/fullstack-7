@@ -4,6 +4,20 @@ import blogService from '../services/blogs'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 
 const Newblog = ({ onError }) => {
+  const useField = (type) => {
+    const [value, setValue] = useState('')
+
+    const onChange = (event) => {
+      setValue(event.target.value)
+    }
+
+    return {
+      type,
+      value,
+      onChange,
+    }
+  }
+  
   const title = useField('text')
   const author = useField('author')
   const url = useField('url')
@@ -34,19 +48,7 @@ const Newblog = ({ onError }) => {
     },
   })
 
-  const useField = (type) => {
-    const [value, setValue] = useState('')
-
-    const onChange = (event) => {
-      setValue(event.target.value)
-    }
-
-    return {
-      type,
-      value,
-      onChange,
-    }
-  }
+  
 
   const handleSubmit = async (event) => {
     event.preventDefault()

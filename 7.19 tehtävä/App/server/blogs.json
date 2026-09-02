@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "this is a blog post yup defineadly true dont doubt it its true",
+    "author": "Onni Hölttä",
+    "url": "https://github.com/Juoksumatto/Fullstack-5",
+    "likes": 72479,
+    "userId": "noname",
+    "comments": [
+      "This is a comment",
+      "This is another comment",
+      "nothing"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Now this is not a blog post I think",
+    "author": "Onni Hölttä",
+    "url": "https://github.com/Juoksumatto/Fullstack-5",
+    "likes": 41,
+    "userId": "noname",
+    "comments": []
+  },
+  {
+    "id": 3,
+    "title": "There is a blog?",
+    "author": "Who?",
+    "url": "Where?",
+    "likes": 31,
+    "userId": "noname",
+    "user": {
+      "name": "No Name",
+      "username": "noname"
+    },
+    "comments": []
+  },
+  {
+    "id": 4,
+    "title": "blogi on blogi",
+    "author": "yes",
+    "url": "no",
+    "likes": 6,
+    "userId": "persoona",
+    "user": {
+      "name": "persoona",
+      "username": "persoona"
+    },
+    "comments": [
+      "no its not"
+    ]
+  }
+]
